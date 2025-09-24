@@ -14,7 +14,7 @@ body {
   --band-top-height: 112px;
   --page-x: 100px;
 }
-@media screen and (min-width: 1024px) {
+
   main {
   padding-top: var(--band-top-height);
   background-color: #1f1f1f;
@@ -265,6 +265,11 @@ body {
   font-size: 14px;
 }
 
+.r-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  text-decoration: underline;
+}
+
 .r-primary {
   background: #ffffff;
   color: #111111;
@@ -336,9 +341,11 @@ body {
   font-size: 20px;
   line-height: 1.45;
 }
-}
 
 
-@media screen and (max-width: 744px) { }
+
+@media screen and (max-width: 744px) {
+    
+ }
 
 @media screen and (max-width: 600px) { }
