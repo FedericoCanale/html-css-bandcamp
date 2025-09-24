@@ -1,3 +1,7 @@
+body {
+  font-family: 'Roboto', sans-serif;
+} 
+
 * {
   margin: 0;
   padding: 0;
@@ -11,12 +15,18 @@ body {
 
 :root {
   --band-top-height: 112px;
+  --page-x: 100px;
 }
 
 .debug {
   background-color: red;
   .top { background-color: paleturquoise; }
   .bottom { background-color: green; }
+}
+
+main {
+  padding-top: var(--band-top-height);
+  background-color: #1f1f1f;
 }
 
 .top {
@@ -40,17 +50,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
   background-color: #222222;
   height: 100%;
+  padding-left: var(--page-x);
+  padding-right: var(--page-x);
 }
 
 .top-b {
   background-color: #2b2b2b;
   display: flex;
   align-items: center;
-  padding: 0 16px;
   height: 100%;
+  padding-left: var(--page-x);
+  padding-right: var(--page-x);
 }
 
 .top-a-right {
@@ -103,6 +115,8 @@ body {
   height: calc(100vh - var(--band-top-height));
   display: flex;
   min-height: 0;
+  padding-left: var(--page-x);
+  padding-right: var(--page-x);
 }
 
 .bottom .left,
@@ -119,7 +133,7 @@ body {
 
 .bottom .right {
   width: 35%;
-  background: #262626;
+  
   color: #e6e6e6;
   padding: 16px;
   height: 100%;
@@ -129,18 +143,17 @@ body {
 .container-flex {
   display: flex;
   flex-wrap: wrap;
-  padding: 16px;
+  gap: 16px;
+  padding: 16px 0;
 }
 
 .album-column {
-  width: 25%;
-  padding: 8px;
-  box-sizing: border-box;
+  width: calc((100% - 3 * 16px) / 4);
 }
 
 .cover {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   background: #333;
   overflow: hidden;
 }
@@ -178,6 +191,7 @@ body {
   font-size: 13px;
 }
 
+
 .r {
   width: 100%;
   margin: 0;
@@ -188,7 +202,7 @@ body {
 
 .r-hero {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   background: #111;
   border: 1px solid #3a3a3a;
 }
@@ -289,7 +303,7 @@ body {
   height: 36px;
   border-radius: 50%;
   object-fit: cover;
-  background: #444444;
+  background: hsl(0, 0%, 100%);
 }
 
 .r-name {
@@ -321,14 +335,7 @@ body {
   font-size: 14px;
 }
 
-main {
-  padding-top: var(--band-top-height);
-}
 
-@media screen and (max-width:744px) {
+@media screen and (max-width: 744px) { }
 
-}
-
-@media screen and (max-width: 600px) {
-
-}
+@media screen and (max-width: 600px) { }
