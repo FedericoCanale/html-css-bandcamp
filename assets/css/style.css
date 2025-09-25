@@ -342,6 +342,10 @@ body {
   line-height: 1.45;
 }
 
+.nav-search {
+  display: none;
+}
+
 @media screen and (max-width: 744px) {
 
   .album-column {
@@ -376,6 +380,42 @@ body {
 }
 }
 
+@media screen and (max-width: 600px) {
+  .Search {
+    display: none;
+  }
+
+  .add-search {
+    width: 100%;
+  }
+
+  .bottom .right {
+    display: none;
+  }
+
+  .bottom .left {
+    width: 100%;
+  }
+
+  .container-flex {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .album-column {
+    width: calc((100% - 12px) / 2);
+  }
+
+  .nav-search {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-a-left nav {
+    gap: 3px;
+  }
+}
 
 
 
