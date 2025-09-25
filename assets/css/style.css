@@ -6,13 +6,13 @@
 
 body {
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
 }
 
 :root {
   --band-top-height: 112px;
-  --page-x: 100px;
+  --page-x: 10px;
 }
 
 main {
