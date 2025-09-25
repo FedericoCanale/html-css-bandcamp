@@ -15,7 +15,7 @@ body {
   --page-x: 100px;
 }
 
-  main {
+main {
   padding-top: var(--band-top-height);
   background-color: #1f1f1f;
 }
@@ -91,12 +91,12 @@ body {
   font-size: 14px;
   padding: 10px 16px;
   border-radius: 0;
-  
+
 }
 
 .top-a-left a:hover {
-  background-color: rgba(255, 255, 255, 0.15); 
-  border-bottom: 2px solid #ffffff;           
+  background-color: rgba(255, 255, 255, 0.15);
+  border-bottom: 2px solid #ffffff;
 }
 
 .add-search {
@@ -346,6 +346,66 @@ body {
   display: none;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0cacd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .album-column {
+    width: calc((100% - 3 * 16px) / 4);
+  }
+
+  .bottom .left {
+    width: 65%;
+  }
+
+  .bottom .right {
+    display: block;
+    width: 35%;
+  }
+
+  .r-cta {
+    flex-direction: row;
+  }
+
+  .r-btn {
+    width: auto;
+  }
+
+  .Search {
+    display: block;
+  }
+
+  .add-search {
+    width: 262px;
+  }
+
+  .top-a-left nav {
+    gap: 18px;
+  }
+
+  .nav-search {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 744px) {
 
   .album-column {
@@ -364,7 +424,7 @@ body {
     flex-direction: column;
   }
 
-    .r-btn {
+  .r-btn {
     width: 100%;
   }
 
@@ -376,8 +436,8 @@ body {
 
   .r-follow {
     margin-left: 0;
-    
-}
+
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -416,9 +476,3 @@ body {
     gap: 3px;
   }
 }
-
-
-
-    
- 
-
