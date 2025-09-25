@@ -342,10 +342,27 @@ body {
   line-height: 1.45;
 }
 
-
-
 @media screen and (max-width: 744px) {
-    
- }
 
-@media screen and (max-width: 600px) { }
+  .album-column {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .bottom .left {
+    width: 70%;
+  }
+
+  .bottom .right {
+    width: 30%;
+  }
+
+  .r-cta {
+    flex-direction: column;
+  }
+
+}
+
+
+    
+ 
+
