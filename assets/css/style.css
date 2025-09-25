@@ -346,6 +346,15 @@ main {
   display: none;
 }
 
+.cover .play-icon:hover {
+  color: #676c6e;
+}
+
+.r-head .fa-circle-play:hover {
+  color: #676c6e;
+  cursor: pointer;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
