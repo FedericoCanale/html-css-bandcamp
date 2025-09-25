@@ -360,7 +360,23 @@ body {
     flex-direction: column;
   }
 
+    .r-btn {
+    width: 100%;
+  }
+
+  .r-artist {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .r-follow {
+    margin-left: 0;
+    
 }
+}
+
+
 
 
     
