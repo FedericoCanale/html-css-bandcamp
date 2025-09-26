@@ -4,39 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bandcamp</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
   </head>
   <body>
-    <main>
-      <div class="top">
-        <div class="top-a">
-          <div class="top-a-right">
-            <img class="logo" src="./assets/img/logo.jpeg" alt="Bandcamp logo" />
-            <input class="Search" type="search" placeholder="Search and discover" />
-          </div>
-          <div class="top-a-left">
-            <nav>
-              <a href="#" class="nav-search"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href="#">Sign up</a>
-              <a href="#">Login</a>
-            </nav>
-          </div>
-        </div>
 
-        <div class="top-b">
-          <input class="add-search" type="search" placeholder="Add a genre, location or tag" />
+    <!-- header -->
+    <header class="header">
+
+      <div class="header-main">
+        <div class="header-left">
+
+          <img class="logo" src="./assets/img/logo.jpeg" alt="Bandcamp logo" />
+          <!-- Primary search bar -->
+          <input class="Search" type="search"
+            placeholder="Search and discover" />
+        </div>
+        <div class="header-right">
+
+          <nav>
+
+            <a href="#" class="nav-search"><i
+                class="fa-solid fa-magnifying-glass"></i></a>
+
+            <a href="#">Sign up</a>
+            <a href="#">Login</a>
+          </nav>
         </div>
       </div>
 
+      <!-- Secondary search bar -->
+      <div class="header-sub">
+        <input class="add-search" type="search"
+          placeholder="Add a genre, location or tag" />
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
       <div class="bottom">
+
+        <!-- left column -->
         <div class="left">
           <div class="container-flex">
+            <!-- Album 1 -->
             <div class="album-column">
               <article class="card">
                 <div class="cover">
                   <img src="./assets/img/a2734007037_2.jpg" alt="Album 1" />
+
                   <i class="fa-solid fa-circle-play play-icon"></i>
                 </div>
                 <h4 class="title">Liminality / Dream State Return</h4>
@@ -45,6 +65,7 @@
               </article>
             </div>
 
+            <!-- Album 2 -->
             <div class="album-column">
               <article class="card">
                 <div class="cover">
@@ -57,6 +78,7 @@
               </article>
             </div>
 
+            <!-- Album 3 -->
             <div class="album-column">
               <article class="card">
                 <div class="cover">
@@ -69,6 +91,7 @@
               </article>
             </div>
 
+            <!-- Album 4 -->
             <div class="album-column">
               <article class="card">
                 <div class="cover">
@@ -81,6 +104,7 @@
               </article>
             </div>
 
+            <!-- Album 5 -->
             <div class="album-column">
               <article class="card">
                 <div class="cover">
@@ -93,6 +117,7 @@
               </article>
             </div>
 
+            <!-- Album 6 -->
             <div class="album-column">
               <article class="card">
                 <div class="cover">
@@ -105,6 +130,7 @@
               </article>
             </div>
 
+            <!-- Album 7 -->
             <div class="album-column">
               <article class="card">
                 <div class="cover">
@@ -117,6 +143,7 @@
               </article>
             </div>
 
+            <!-- Album 8 -->
             <div class="album-column">
               <article class="card">
                 <div class="cover">
@@ -129,6 +156,7 @@
               </article>
             </div>
 
+            <!-- Album 9 -->
             <div class="album-column">
               <article class="card">
                 <div class="cover">
@@ -141,6 +169,7 @@
               </article>
             </div>
 
+            <!-- Album 10 -->
             <div class="album-column">
               <article class="card">
                 <div class="cover">
@@ -153,6 +182,7 @@
               </article>
             </div>
 
+            <!-- Album 11 -->
             <div class="album-column">
               <article class="card">
                 <div class="cover">
@@ -165,6 +195,7 @@
               </article>
             </div>
 
+            <!-- Album 12 -->
             <div class="album-column">
               <article class="card">
                 <div class="cover">
@@ -179,8 +210,10 @@
           </div>
         </div>
 
+        <!-- right column -->
         <div class="right">
           <div class="r">
+
             <div class="r-hero">
               <img src="./assets/img/a2734007037_5.jpg" alt="Album cover" />
             </div>
@@ -196,14 +229,16 @@
 
             <div class="r-cta">
               <a href="#" class="r-btn r-primary">Go to album</a>
-              <a href="#" class="r-btn r-outline"><i class="fa-regular fa-heart"></i> Wishlist</a>
+              <a href="#" class="r-btn r-outline"><i
+                  class="fa-regular fa-heart"></i> Wishlist</a>
             </div>
 
             <p class="r-info">2 tracks, 18 minutes</p>
             <p class="r-date">released September 02, 2025</p>
 
             <div class="r-artist">
-              <img class="r-avatar" src="./assets/img/artist.jpg" alt="Artist avatar" />
+              <img class="r-avatar" src="./assets/img/artist.jpg"
+                alt="Artist avatar" />
               <div class="r-ameta">
                 <p class="r-name">Elder</p>
                 <p class="r-loc">Berlin, Germany</p>
@@ -213,7 +248,8 @@
 
             <p class="quoted">"</p>
             <p class="r-text">
-              Great way to start off the week! Shame it’s sold out in the States and Germany isn’t shipping to the US.
+              Great way to start off the week! Shame it’s sold out in the States
+              and Germany isn’t shipping to the US.
             </p>
             <a href="#" class="r-link">Dethroned</a>
           </div>
